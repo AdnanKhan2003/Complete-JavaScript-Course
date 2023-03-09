@@ -427,7 +427,7 @@ console.log(debugMe);
 //_________________________________________________________________________
 // FIND
 
-// - To retrieve the first element from the array that matches a certain condition
+// - To retrieve the first element from the array that matches a certain condition (either true or false)
 /* 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 const firstElSatisfiesCondition = movements.find(mov => mov < 0);
