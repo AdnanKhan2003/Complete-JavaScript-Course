@@ -212,7 +212,7 @@ const updateUI = function (acc) {
 };
 
 const startLogOutTimer = function () {
-  let time = 11;
+  let time = 300;
   const tick = () => {
     // SET minutes & seconds
     let minutes = String(Math.trunc(time / 60)).padStart(2, 0);
@@ -243,9 +243,9 @@ const startLogOutTimer = function () {
 let currentAccount, timer;
 
 // FAKE LOGIN
-currentAccount = account1;
-updateUI(currentAccount);
-containerApp.style.opacity = 100;
+// currentAccount = account1;
+// updateUI(currentAccount);
+// containerApp.style.opacity = 100;
 
 btnLogin.addEventListener('click', function (e) {
   // Prevent form from submitting
@@ -457,7 +457,7 @@ console.log(Math.min('1', 3, 5, 6, 7));
 // 3] Math.max()
 console.log(Math.max(1, 3, 5, 6, 7));
 
-// 4] Math.PI()
+// 4] Math.PI
 // 3.14....
 console.log(Math.PI);
 console.log(Math.PI * 10 ** 2);

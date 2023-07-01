@@ -146,7 +146,7 @@ console.log(spread);
 // AT METHODS helps in "method chaining" which we'll learn later
 
 /* 
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const arr = [1,  2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // WAYS to GET ARRAY ELEMENTS
 console.log(arr[0]);
@@ -251,7 +251,7 @@ setDs.forEach(function (value, _, set) {
   // console.log(set);
 });
 
-// Here '_' means 'THROWABLE' variables
+// Here '_' means 'THROW AWAY' variables
 // It means that it is completely unnecessary
  */
 

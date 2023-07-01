@@ -304,7 +304,7 @@ addition(...numbers);
 
 restaurant.orderPizza(`Alu`, `Paneer`, `Chicken`);
 
-// Spread operator is used where we write values seperated by commas
+// Spread operator is used wher  e we write values seperated by commas
 // Rest is used where variables are written seperated by cammas
 */
 
@@ -562,7 +562,7 @@ for (const day of weekDays) {
   const open = restaurant.openingHours[day]?.open ?? 'closed';
   console.log(`At ${day}, we're open at ${open}`);
 }
-
+ 
 // METHODS
 const result = restaurant.order?.(1, 2) ?? `We don't have that dish`;
 console.log(result);
@@ -1062,8 +1062,8 @@ const sda = new Map([
 ]);
 
 // LOOPING over MAP
-for (const el of sda) {
-  console.log(el);
+for (const [key, value] of sda) {
+  console.log(key, value);
 }
  */
 //________________________________________________________________________
@@ -1432,3 +1432,15 @@ console.log('Alu lelo'.substr(6, 2));
  */
 
 //________________________________________________________________________
+const newRestaurant = { ...restaurant };
+newRestaurant.name = `Paratha`;
+console.log(restaurant.name);
+console.log(newRestaurant.name);
+
+// "Object.assign()" only creates a shallow copy
+const vegCopy = Object.assign({}, restaurant);
+vegCopy.vegetable = { nameOfVeg: `Alu`, size: `30kg` };
+vegCopy.name = `Khan`;
+console.log(restaurant);
+console.log(vegCopy);
+d;
