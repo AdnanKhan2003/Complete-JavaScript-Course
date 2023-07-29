@@ -225,6 +225,7 @@ const obsSlide = function (entries, observer) {
   // GUARD CLAUSE
   if (!entry.isIntersecting) return;
   entry.target.classList.remove('section--hidden');
+  console.log(entry);
   // Here after our work is finished but still the 'observer' continue observing which is not needed which is not good for performance
   // So we then do unobserve
 

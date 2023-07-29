@@ -226,6 +226,12 @@ class EVCl extends CarCl {
       }`
     );
   }
+  get speedUs() {
+    return `${this.speed}%`;
+  }
+  set speedUs(speed) {
+    return `${(this.speed = speed)}%`;
+  }
 }
 
 const toy = new EVCl('toy', 230, '50%');
@@ -235,3 +241,7 @@ toy.chargeBattery(10);
 // console.log(toy.batteryCharge);
 toy.brake();
 console.log(toy);
+console.log(toy.speedUs);
+toy.speedUs = 230;
+
+console.log(toy.speedUs);
